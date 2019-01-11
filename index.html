@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Font Awesome CDN -->
+    <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+
+    <title>Raven Records</title>
+  </head>
+  <body id="landing" class="bod">
+  	<!-- navbar -->
+  	<nav class="navbar navbar-expand-lg fixed-top">
+  		<a class="navbar-brand" href="#">Home</a>
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">  
+ 			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse " id="navbarSupportedContent">
+	  		<ul class="navbar-nav mr-4">
+	  			<li class="nav-item">
+	  				<a class="nav-link" data-value="Log in" href="./Log-in.html">Log in</a>
+	  			</li>
+	  			<li class="nav-item">
+	  				<a class="nav-link" data-value="Sign up" href="./Sign-up.html">Sign up</a>
+	  			</li>
+	  		</ul>
+	  	</div>
+	</nav>
+	<header class="header">
+		<div class="overlay">
+			<div class="container row sound-container">
+				<div class="col-xs-4 col-md-4"></div>
+				<div class="sound-shell col-xs-4 col-md-4">
+					<button type="button" id="sound-toggle" class="btn btn-lg" data-toggle="button" aria-pressed="false" aria-label="Toggle Sound">
+						<span id="sound-icon" class="fas fa-volume-mute" aria-hidden="true"></span>
+					</button>
+				</div>
+				<div class="col-xs-4 col-md-4"></div>
+			</div>
+			<div class="container row music-container">
+				<div class="col-xs-4 col-md-4"></div>
+				<div class="music-shell col-xs-4 col-md-4">
+					<button class="btn btn-outline-secondary btn-lg">Raven</button>
+				</div>
+				<div class="col-xs-4 col-md-4"></div>
+			</div>
+			<div class="container row client-portal">
+				<div class="col-xs-3 col-md-3"></div>
+				<div class="client-shell col-xs-3 col-md-3">
+					<button class="btn btn-outline-secondary btn-lg individual">Individual</button>
+				</div>
+				<div class="client-shell col-xs-3 col-md-3">
+					<button class="btn btn-outline-secondary btn-lg business">Business</button>
+				</div>
+				<div class="col-xs-3 col-md-3"></div>
+			</div>
+			
+		    <div id="status" style="color:red;">Status: Loading</div>
+		    <h2 style="color:white" >Control Button</h2>
+		    <button id="restart">Restart</button>
+		</div>
+	</header>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
