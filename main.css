@@ -1,0 +1,81 @@
+/*Navbar Style*/
+.navbar{ background: #232323; }
+.nav-link , .navbar-brand{ color: #f4f4f4; cursor: pointer;}
+.nav-link{ margin-right: 1em !important;}
+.nav-link:hover{ background: #f4f4f4; color: #f97300; }
+.navbar-collapse{ justify-content: flex-end;}
+.navbar-toggler{  background:#fff !important;}
+/*Body Style*/
+.bod{
+	background-image: url('../images/headerback.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
+.row{
+	margin: auto;
+}
+/*Header Style*/
+.header{
+
+}
+.overlay{
+position: absolute;
+min-height: 100%;
+min-width: 100%;
+left: 0;
+top: 0;
+}
+/*Sound-container Style*/
+.sound-container{
+	margin-top: 30vh;
+}
+.sound-shell{
+	color: #efefef;
+	text-align: center;
+	margin: auto;
+	padding: 2em;
+}
+.sound-shell button{
+	background: none;
+	border: none;
+	color: #efefef;
+}
+.sound-shell button:hover{
+	background: none;
+	border: none;
+}
+.sound-shell button:focus{
+	background: none;
+	border: none;
+	box-shadow: none;
+}
+.sound-shell button:active{
+	background: none;
+	border: none;
+}
+/*Music-container Style*/
+.music-container{
+	margin-top: 2vh;
+}
+.music-shell{
+	text-align: center;
+	top: 30%;
+	margin: auto;
+	padding: 2em;
+
+}
+.music-shell a{
+	border: 1px solid #4286F4;
+	background: #4286F4;
+	color: #fff;
+}
+/*Client-portal Style*/
+.client-shell{
+	text-align: center;
+}
+.client-shell a{
+	border: 1px solid #4286F4;
+	background: #4286F4;
+	color: #fff;
+}
