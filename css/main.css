@@ -65,7 +65,7 @@ top: 0;
 	padding: 2em;
 
 }
-.music-shell button{
+.music-shell a{
 	border: 1px solid #4286F4;
 	background: #4286F4;
 	color: #fff;
@@ -74,7 +74,7 @@ top: 0;
 .client-shell{
 	text-align: center;
 }
-.client-shell button{
+.client-shell a{
 	border: 1px solid #4286F4;
 	background: #4286F4;
 	color: #fff;
