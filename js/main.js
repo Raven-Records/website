@@ -40,7 +40,7 @@ $(function(){
 
     /*Audio element*/
 	var audioElement = document.createElement('audio');
-    audioElement.setAttribute('src', 'music/landingSong-00.mp3');
+    audioElement.setAttribute('src', 'music/Mountain Songs I/The_Pre_Retox_Detox.mp3');
     
     audioElement.addEventListener('ended', function() {
         this.play();
@@ -133,6 +133,11 @@ $(function(){
 		this.link = "navLinks/" + label ;
 	}
 
+	//Glowing Logo Test Code
+	$('#glow-target').addEventListener("webkitAnimationEnd", callfunction,false);
+	$('#glow-target').addEventListener("animationend", callfunction,false);
+	$('#glow-target').addEventListener("oanimationend", callfunction,false);
+	
 	/* End Test Code */
 
 })

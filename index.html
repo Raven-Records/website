@@ -4,7 +4,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <!-- Animate.css CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <!-- Font Awesome CDN -->
     <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
     <!-- Bootstrap CSS -->
@@ -17,7 +18,7 @@
   <body id="landing" class="bod">
   	<!-- navbar -->
   	<nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
-  		<a class="navbar-brand" href="#">Home</a>
+  		<a class="navbar-brand" href="#">Raven Records</a>
   		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">  
  			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -46,7 +47,10 @@
 			<div class="container row music-container">
 				<div class="col-xs-4 col-md-4"></div>
 				<div class="music-shell col-xs-4 col-md-4">
-					<a class="btn btn-outline-secondary btn-lg" href="./general.html">Raven</a>
+					<a href="./general.html">
+						<img class="raven-sprite" src="../logo/tests/Raven-Sprite-01.png">
+						<img id="glow-target" class="glow-sprite animated fadeIn" src="../logo/tests/glow-sprite-02.png">
+					</a>
 				</div>
 				<div class="col-xs-4 col-md-4"></div>
 			</div>
@@ -60,10 +64,12 @@
 				</div>
 				<div class="col-xs-3 col-md-3"></div>
 			</div>
-			
-		    <div id="status" style="color:red;">Status: Loading</div>
-		    <h2 style="color:white" >Control Button</h2>
-		    <button id="restart">Restart</button>
+			<div style="visibility: hidden">
+				<div id="status" style="color:red;">Status: Loading</div>
+		    	<h2 style="color:white" >Control Button</h2>
+		    	<button id="restart">Restart</button>	
+			</div>
+
 		</div>
 	</header>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

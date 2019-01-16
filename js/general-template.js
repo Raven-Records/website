@@ -3,7 +3,7 @@ $(function(){
 
 	//Default button array
 	var navArray = ["Browse", "Albums", "Artists", "Advertising", "Pricing", "Contact"];
-	//Nav button loop
+	//Nav button object instatiation loop
 		for(var i=0; i<navArray.length; i++){
 			navArray[i] = new navButton(navArray[i]);
 		}
@@ -54,4 +54,49 @@ $(function(){
 		navArray[buttonID] = newLabel;
 	}
 
+	/* ------------------------ End Nav Bar ------------------------ */
+	/* -------------------------- Gen Grid -------------------------- */
+
+	var bannerContainer = document.createElement('div');
+		bannerContainer.setAttribute('id', 'bannerDiv');
+		bannerContainer.setAttribute('class', 'row col-md-12 content-grid banner-grid');
+		bannerContainer.setAttribute('style', 'height:20vh;width:100vw');
+	var introContainer = document.createElement('div');
+		introContainer.setAttribute('id', 'introDiv');
+		introContainer.setAttribute('class', 'row col-md-12 content-grid');
+		introContainer.setAttribute('style', 'height:110vh;width:100vw');
+
+	//Album section instatiation
+
+	//Default album list
+	var albumArray = ['Mountain Songs I', 'Ictus Tactus', 'Indomitus', 'Epicus Flactus', 'Velum Inveritas', 'Raghaflatus Maximus'];
+		//Album object instatiation loop
+		for(var x=0; x<albumArray.length; x++){
+			albumArray[x] = new albumObj(albumArray[x]);
+		}
+	var albumContainer = document.createElement('div');
+		albumContainer.setAttribute('id', 'albumDiv');
+		albumContainer.setAttribute('class', 'row col-md-12 grid-container');
+		for(var n=0; n<albumArray.length; n++){
+					//var albumItem = document.createElement('li');
+						//albumItem.setAttribute('class', 'col-md-4 content-grid');
+						var album = document.createElement('a');
+							album.setAttribute('class', 'col-md-4 content-grid');
+							album.setAttribute('href', albumArray[n].link);
+							var albumCover = document.createElement('img');
+								albumCover.setAttribute('class', 'albumImage');
+								albumCover.setAttribute('src', 'music/' + albumArray[n].label + '/cover.jpg');
+							album.append(albumCover);
+						//albumItem.append(album);
+					albumContainer.append(album);
+				}
+	$('#bod').append(bannerContainer, introContainer, albumContainer);
+
+	function albumObj(label){
+		this.label = label;
+		this.link = "albumLinks/" + label + ' Links/artistIndex.html' ;
+	}
+
+	/* ------------------------ End Gen Grid ------------------------ */
+	
 })
