@@ -1,0 +1,27 @@
+.banner-grid{
+	margin-top: 50px;
+}
+.grid-container{
+	position: relative;
+	background-color:#1a1a1a;
+	border: thick solid #232323;
+	padding: 0;
+}
+.content-grid{
+	position:relative;
+	padding: 0px;
+	height:33vh;
+	background-color:#1a1a1a;
+	border: thick solid #232323;
+}
+.album-grid{
+	position:relative;
+	height:100%;
+	width: 100%;
+	background-color:#1a1a1a;
+	border: thick solid #232323;
+}
+.albumImage{
+	max-height: 100%;
+	width: 100%;
+}
