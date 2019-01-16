@@ -85,7 +85,7 @@ $(function(){
 							album.setAttribute('href', albumArray[n].link);
 							var albumCover = document.createElement('img');
 								albumCover.setAttribute('class', 'albumImage');
-								albumCover.setAttribute('src', 'music/' + albumArray[n].label + '/cover.jpg');
+								albumCover.setAttribute('src', 'images/' + albumArray[n].label + ' Images/cover.jpg');
 							album.append(albumCover);
 						//albumItem.append(album);
 					albumContainer.append(album);
