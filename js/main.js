@@ -1,5 +1,8 @@
 $(function(){
-
+	/* -------------------------- Nav Bar -------------------------- */
+	var newNavArray = ['logo', 'Log in', 'Sign up'];
+	replaceNavArray(newNavArray);
+	/* ------------------------ End Nav Bar ------------------------ */
 	/*User Variables*/
     var u = "";
     var p = "";
@@ -134,10 +137,25 @@ $(function(){
 	}
 
 	//Glowing Logo Test Code
-	$('#glow-target').addEventListener("webkitAnimationEnd", callfunction,false);
-	$('#glow-target').addEventListener("animationend", callfunction,false);
-	$('#glow-target').addEventListener("oanimationend", callfunction,false);
+
+	var pulseOn = true;
+	$('.music-shell').bind({
+		'mouseenter': function(){console.log('Mouse over'); pulseOn = false; glow();}, 
+		'mouseleave': function(){console.log('Mouse leave'); pulseOn = true; pulse();}
+	});
 	
+	function pulse() {           
+		var raven = $('#glow-target');
+		if(pulseOn==true){
+			raven.animate({opacity:'1'}, 2000);
+			raven.animate({opacity:'0'}, 2000, pulse);
+		}
+    }
+    pulse();
+	function glow() {
+		var raven = $('#glow-target');
+		raven.animate({opacity:'1'}, 500);
+	}
 	/* End Test Code */
 
 })

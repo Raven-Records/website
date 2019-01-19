@@ -7,7 +7,7 @@
 .navbar-collapse{ justify-content: flex-end;}
 .navbar-toggler{  background:#fff !important;}
 /*Body Style*/
-.bod{
+#bod{
 	background-image: url('../images/headerback.jpg');
 	background-attachment: fixed;
 	background-size: cover;
@@ -67,14 +67,12 @@ top: 0;
 	width: 130%;
 	height: auto;
 	position: absolute;
-	top: -30%;
+	top: -25%;
 	left: -15%;
-	animation-duration: 3s;
-  	animation-delay: 2s;
-  	animation-iteration-count: infinite;
 }
 .music-container{
 	margin-top: 2vh;
+	width: 40%;
 }
 .music-shell{
 	text-align: center;
@@ -91,6 +89,9 @@ top: 0;
 	color: #fff;
 }
 /*Client-portal Style*/
+.client-portal{
+	margin-top: 12vh;
+}
 .client-shell{
 	text-align: center;
 }
