@@ -125,16 +125,6 @@ $(function(){
 	}
 
 	/* Test Code */
-	var navArray = ["Browse", "Albums", "Artists", "Advertising", "Pricing", "Contact"];
-	for(var i=0; i<navArray.length; i++){
-		navArray[i] = new navButton(navArray[i]);
-		console.log(navArray[i]);
-	}
-	//Nav button object function
-	function navButton(label){
-		this.label = label;
-		this.link = "navLinks/" + label ;
-	}
 
 	//Glowing Logo Test Code
 
