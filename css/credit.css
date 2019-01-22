@@ -1,0 +1,11 @@
+.credit-grid{
+	position:relative;
+	padding: 0px;
+	height:33vh;
+	background-color:#1a1a1a;
+	border: thick solid #232323;
+}
+.creditImage{
+	max-height: 100%;
+	width: 100%;
+}

@@ -3,7 +3,7 @@ $(function(){
 	$('#AboutButton').addClass('active');
 	/* ------------------------ End Nav Bar ------------------------ */
 	/* -------------------------- Gen Grid -------------------------- */
-
+	var bod = $("#bod");
 	//Banner Carousel
 	var bannerArray = ['Ictus Tactus.jpg', 'Indomitus.jpg', 'raven-sprite-01.png.jpg', 'Epicus Flactus.jpg', 'Velum Inveritas.jpg'];
 	var bannerContainer = document.createElement('div');
@@ -62,31 +62,8 @@ $(function(){
 
 	//Album section instatiation
 
-	//Default album list
-	var albumArray = ['Mountain Songs I', 'Ictus Tactus', 'Indomitus', 'Epicus Flactus', 'Velum Inveritas', 'Raghaflatus Maximus'];
-		//Album object instatiation loop
-		for(var x=0; x<albumArray.length; x++){
-			albumArray[x] = new albumObj(albumArray[x]);
-		}
-	var albumContainer = document.createElement('div');
-		albumContainer.setAttribute('id', 'albumDiv');
-		albumContainer.setAttribute('class', 'row col-md-12 grid-container');
-		for(var n=0; n<albumArray.length; n++){
-			var album = document.createElement('a');
-				album.setAttribute('class', 'col-md-4 content-grid');
-				album.setAttribute('href', albumArray[n].link);
-				var albumCover = document.createElement('img');
-					albumCover.setAttribute('class', 'albumImage');
-					albumCover.setAttribute('src', 'images/' + albumArray[n].label + ' Images/cover.jpg');
-				album.append(albumCover);
-			albumContainer.append(album);
-		}
-	$('#bod').append(bannerContainer, introContainer, albumContainer);
-
-	function albumObj(label){
-		this.label = label;
-		this.link = "albumLinks/" + label + ' Links/albumPage.html' ;
-	}
+	bod.append(bannerContainer, introContainer);
+	setAlbums(bod); //src = js/albums.js
 
 	/* ------------------------ End Gen Grid ------------------------ */
 	
