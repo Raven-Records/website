@@ -56,3 +56,11 @@
 .row{
 	margin: auto;
 }
+.section-title{
+	height: 10vh;
+	color: #fff;
+	font-size: 3em;
+	font-weight: bold;
+	justify-content: center;
+	background-color: #232323;
+}

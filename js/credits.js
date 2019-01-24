@@ -6,6 +6,9 @@ function setCredits(appendTo){
 		for(var x=0; x<creditArray.length; x++){
 			creditArray[x] = new creditObj(creditArray[x]);
 		}
+	var creditSectionTitle = document.createElement('div');
+		creditSectionTitle.setAttribute('class', 'row col-md-12 section-title');
+		$(creditSectionTitle).text("Credits");
 	var creditContainer = document.createElement('div');
 		creditContainer.setAttribute('id', 'creditDiv');
 		creditContainer.setAttribute('class', 'row col-md-12 grid-container');

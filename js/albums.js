@@ -1,4 +1,4 @@
-//Album section instant
+//Album section instantiation
 function setAlbums(appendTo){
 	//Default album list
 	var albumArray = ['Mountain Songs I', 'Ictus Tactus', 'Indomitus', 'Epicus Flactus', 'Velum Inveritas', 'Raghaflatus Maximus'];
@@ -6,6 +6,9 @@ function setAlbums(appendTo){
 		for(var x=0; x<albumArray.length; x++){
 			albumArray[x] = new albumObj(albumArray[x]);
 		}
+	var albumSectionTitle = document.createElement('div');
+		albumSectionTitle.setAttribute('class', 'row col-md-12 section-title');
+		$(albumSectionTitle).text("Albums");
 	var albumContainer = document.createElement('div');
 		albumContainer.setAttribute('id', 'albumDiv');
 		albumContainer.setAttribute('class', 'row col-md-12 grid-container');
@@ -19,10 +22,10 @@ function setAlbums(appendTo){
 				album.append(albumCover);
 			albumContainer.append(album);
 		}
-	appendTo.append(albumContainer);
+	appendTo.append(albumSectionTitle, albumContainer);
 }
 
 function albumObj(label){
 	this.label = label;
-	this.link = "albumLinks/" + label + ' Links/albumPage.html' ;
+	this.link = 'albumLinks/' + label + ' Links/albumPage.html';
 }
