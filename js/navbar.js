@@ -4,7 +4,7 @@ $(function(){
 /* -------------------------- Nav Bar -------------------------- */
 
 //Default button array
-var navArray = ["Logo", "About", "Browse", "Albums", "Artists", "Advertising", "Pricing", "Contact"];
+var navArray = ["Logo", "About", "Albums", "Artists", "Credits", "Careers", "Advertising", "Pricing", "Contact"];
 
 function setNav(){
 
