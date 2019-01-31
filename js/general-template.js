@@ -54,15 +54,10 @@ $(function(){
 			bannerCarousel.append(innerCarousel);
 		bannerContainer.append(bannerCarousel);
 
-	//Introduction Section
-	var introContainer = document.createElement('div');
-		introContainer.setAttribute('id', 'introDiv');
-		introContainer.setAttribute('class', 'row col-md-12 content-grid');
-		introContainer.setAttribute('style', 'height:110vh;width:100vw');
+	//Section instatiation
 
-	//Album section instatiation
-
-	bod.append(bannerContainer, introContainer);
+	bod.append(bannerContainer);
+	setIntro(bod); //src = js/introduction.js
 	setAlbums(bod); //src = js/albums.js
 
 	/* ------------------------ End Gen Grid ------------------------ */

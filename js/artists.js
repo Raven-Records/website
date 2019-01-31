@@ -1,5 +1,5 @@
 //Artist section instantiation
-function setartists(appendTo){
+function setArtists(appendTo){
 	//Default artist list
 	var artistArray = ['Mountain Songs I', 'Ictus Tactus', 'Indomitus', 'Epicus Flactus', 'Velum Inveritas', 'Raghaflatus Maximus'];
 		//Artist object instatiation loop
