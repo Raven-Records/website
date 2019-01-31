@@ -67,7 +67,17 @@ function setNav(){
 //Nav button object function
 function navButton(label){
 	this.label = label;
-	this.link = "navLinks/" + label + ".html";
+	if (label === "About") {
+		/*switch (Insert Cookie Reference Here){
+			case "General";
+				this.link = "general.html";
+			case "Business";
+				
+		}*/
+		this.link = "general" + ".html";
+	} else {
+		this.link = label + ".html";
+	}
 }
 
 
