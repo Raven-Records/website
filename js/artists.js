@@ -1,7 +1,7 @@
 //Artist section instantiation
 function setArtists(appendTo){
 	//Default artist list
-	var artistArray = ['Mountain Songs I', 'Ictus Tactus', 'Indomitus', 'Epicus Flactus', 'Velum Inveritas', 'Raghaflatus Maximus'];
+	var artistArray = ['Rob Arthur Hayse', 'Digi Drizz', 'Indomitus', 'Musicxavier', 'AI 1', 'AI 2'];
 		//Artist object instatiation loop
 		for(var x=0; x<artistArray.length; x++){
 			artistArray[x] = new artistObj(artistArray[x]);
@@ -18,7 +18,7 @@ function setArtists(appendTo){
 				artist.setAttribute('href', artistArray[n].link);
 				var artistCover = document.createElement('img');
 					artistCover.setAttribute('class', 'artistImage');
-					artistCover.setAttribute('src', 'images/' + artistArray[n].label + ' Images/cover.jpg');
+					artistCover.setAttribute('src', 'images/' + artistArray[n].label + ' Images/profile-image.jpg');
 				artist.append(artistCover);
 			artistContainer.append(artist);
 		}
