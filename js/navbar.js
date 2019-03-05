@@ -60,8 +60,14 @@ function setNav(){
 				}
 			collapseContent.append(buttonList);
 		navBar.append(collapseButton, collapseContent);
+
+	//Nav Spacer to account for nav covering top of page (possibly temporary)
+	var navSpacer = document.createElement('nav');
+		navSpacer.setAttribute('id', 'topNavSpacer');
+		navSpacer.setAttribute('class', 'row col-md-12 mt-nav')
 	//$('#bod').insertBefore(navBar, $('#bod').firstChild);
-	$('#bod').append(navBar);
+
+	$('#bod').append(navBar, navSpacer);
 }
 
 //Nav button object function
@@ -74,7 +80,7 @@ function navButton(label){
 			case "Business";
 				
 		}*/
-		this.link = "general" + ".html";
+		this.link = "creator" + ".html";
 	} else {
 		this.link = label + ".html";
 	}

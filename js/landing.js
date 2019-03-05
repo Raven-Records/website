@@ -31,7 +31,7 @@ function setLanding(appendTo){
 		var graphicShell = document.createElement('div');
 			graphicShell.setAttribute('class', 'graphic-shell col-xs-4 col-md-4');
 			var graphicLink = document.createElement('a');
-				graphicLink.setAttribute('href', 'general.html');
+				graphicLink.setAttribute('href', 'creator.html');
 				var ravenSprite = document.createElement('img');
 					ravenSprite.setAttribute('class', 'raven-sprite');
 					ravenSprite.setAttribute('src', 'images/branding/Raven-Sprite-01.png');
@@ -50,23 +50,23 @@ function setLanding(appendTo){
 		clientContainer.setAttribute('class', 'container row client-container');
 		var clientSpacerL = document.createElement('div');
 			clientSpacerL.setAttribute('class', 'col-xs-3 col-md-3');
-		var generalShell = document.createElement('div');
-			generalShell.setAttribute('class', 'client-shell col-xs-3 col-md-3');
-			var generalLink = document.createElement('a');
-				generalLink.setAttribute('class', 'btn btn-outline-secondary btn-lg general');
-				generalLink.setAttribute('href', 'general.html');
-				$(generalLink).text('General');
-			generalShell.append(generalLink);
-		var businessShell = document.createElement('div');
-			businessShell.setAttribute('class', 'client-shell col-xs-3 col-md-3');
-			var businessLink = document.createElement('a');
-				businessLink.setAttribute('class', 'btn btn-outline-secondary btn-lg business');
-				businessLink.setAttribute('href', 'business.html');
-				$(businessLink).text('Business');
-			businessShell.append(businessLink);
+		var creatorShell = document.createElement('div');
+			creatorShell.setAttribute('class', 'client-shell col-xs-3 col-md-3');
+			var creatorLink = document.createElement('a');
+				creatorLink.setAttribute('class', 'btn btn-outline-secondary btn-lg creator');
+				creatorLink.setAttribute('href', 'creator.html');
+				$(creatorLink).text('Creators');
+			creatorShell.append(creatorLink);
+		var advertiserShell = document.createElement('div');
+			advertiserShell.setAttribute('class', 'client-shell col-xs-3 col-md-3');
+			var advertiserLink = document.createElement('a');
+				advertiserLink.setAttribute('class', 'btn btn-outline-secondary btn-lg advertiser');
+				advertiserLink.setAttribute('href', 'advertiser.html');
+				$(advertiserLink).text('Advertisers');
+			advertiserShell.append(advertiserLink);
 		var clientSpacerR = document.createElement('div');
 			clientSpacerR.setAttribute('class', 'col-xs-3 col-md-3');
-		clientContainer.append(clientSpacerL, generalShell, businessShell, clientSpacerR);
+		clientContainer.append(clientSpacerL, creatorShell, advertiserShell, clientSpacerR);
 
 
 	appendTo.append(soundContainer, graphicContainer, clientContainer);

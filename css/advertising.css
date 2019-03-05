@@ -1,0 +1,23 @@
+#advertisingDiv{
+	margin-top: 10vh;
+}
+#advertisingText{
+	font-size: 1em;
+}
+#advertisingSubText{
+	color: grey;
+	font-size: .7em
+}
+#advertisingContactBox{
+	margin-top: 5vh;
+	margin-left: 10vw;
+}
+#contactTextLead{
+	color: #fff;
+	font-size: 2em;
+}
+#contactTextLink{
+	color: #fff;
+	font-size: 3em;
+	text-decoration: underline;
+}
