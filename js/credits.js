@@ -22,7 +22,7 @@ function setCredits(appendTo){
 				credit.append(creditCover);
 			creditContainer.append(credit);
 		}
-	appendTo.append(creditContainer);
+	appendTo.append(creditSectionTitle, creditContainer);
 }
 
 function creditObj(label){

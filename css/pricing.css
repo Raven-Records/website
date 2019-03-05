@@ -1,12 +1,29 @@
+.card{
+	height:100%;
+	width: 60%;
+	margin: auto;
+}
 .pricing-grid{
 	position:relative;
 	padding: 0px;
 	height:60vh;
 	background-color:#1a1a1a;
-	border: thick solid #232323;
 	text-align: center;
 }
 .pricingInstance{
 	height: 100%;
 	width: 50vh;
+}
+.list-unstyled{
+	padding-left: 0;
+	list-style: none;
+}
+.check-out-button{
+	color: #1a1a1a;
+	width: 100%;
+	background-color: #fff;
+	border-color: #1a1a1a;
+	border-radius: 0;
+	margin-top: auto;
+	margin-bottom: 1vh;
 }

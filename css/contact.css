@@ -1,0 +1,12 @@
+.card{
+	color: #fff;
+	border: none;
+	background-color: #232323;
+}
+.card-header{
+	border: none;
+	background-color: #232323;
+}
+.contact-btn{
+	display: inline-block;
+}

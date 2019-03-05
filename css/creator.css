@@ -1,0 +1,12 @@
+.grid-container{
+	position: relative;
+	background-color:#1a1a1a;
+	border: thick solid #1a1a1a;
+	padding: 0;
+}
+.content-grid{
+	position:relative;
+	padding: 0px;
+	height:33vh;
+	background-color:#1a1a1a;
+}

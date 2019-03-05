@@ -1,7 +1,7 @@
 //Pricing section instantiation
 function setPricing(appendTo){
 	//Default pricing title array
-	var pricingTitleArray = ['Pay per Second', 'Youtuber Subscription', 'Custom License'];
+	var pricingTitleArray = ['Pay per Second', 'YouTuber Subscription', 'Custom License'];
 		
 	//Default pricing cost array
 	var pricingCostArray = ['$1/sec', '$10/mo', 'You Decide'];
@@ -35,7 +35,7 @@ function setPricing(appendTo){
 		pricingContainer.setAttribute('class', 'row col-md-12 grid-container');
 		for(var n=0; n<pricingObjectArray.length; n++){
 			var pricing = document.createElement('div');
-				pricing.setAttribute('class', 'col-md-6 pricing-grid text-center');
+				pricing.setAttribute('class', 'col-md-4 pricing-grid text-center');
 				var pricingInstance = document.createElement('div');
 					pricingInstance.setAttribute('class', 'card mb-4 shadow-sm');
 					var pricingHeader = document.createElement('div');
@@ -50,13 +50,18 @@ function setPricing(appendTo){
 							pricingCost.setAttribute('class', 'card-title pricing-card-title');
 							$(pricingCost).text(pricingObjectArray[n].cost);
 						var pricingFeaturesList = document.createElement('ul');
+							pricingFeaturesList.setAttribute('class', 'list-unstyled mt-3 mb-4');
 							//Note: this for loop is a bit of a mind boggler, points back to the list of features for each pricing bracket
 							for(var y=0; y<pricingObjectArray[n].features.length; y++){
 								var pricingFeature = document.createElement('li');
 									$(pricingFeature).text(pricingObjectArray[n].features[y]);
 							pricingFeaturesList.append(pricingFeature);
 							}
-						pricingBody.append(pricingCost, pricingFeaturesList);
+						var checkOutButton = document.createElement('a');
+							checkOutButton.setAttribute('class', 'btn btn-primary check-out-button');
+							checkOutButton.setAttribute('href', pricingObjectArray[n].link);
+							$(checkOutButton).text('SUBSCRIBE');
+						pricingBody.append(pricingCost, pricingFeaturesList, checkOutButton);
 					pricingInstance.append(pricingHeader, pricingBody);
 				pricing.append(pricingInstance);
 			pricingContainer.append(pricing);

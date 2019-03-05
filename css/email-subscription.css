@@ -1,0 +1,31 @@
+#emailSubscriptionDiv{
+	background-color: #fff;
+}
+#emailSubscriptionTextBox{
+	width: 25%;	
+	margin-top: 5vh;
+	margin-left: 10%;
+}
+#emailSubscriptionText{
+	color: #1a1a1a;
+	font-size: .5em;
+}
+#emailSubscriptionForm{
+	width: 30%;
+	margin-left: auto;
+	margin-top: 5vh;
+	margin-right: 10%;
+}
+#emailInput{
+	text-align: center;
+	border-color: #1a1a1a;
+	border-bottom: none;
+	border-radius: 0;
+}
+#emailSubmitButton{
+	color: #1a1a1a;
+	width: 100%;
+	background-color: #fff;
+	border-color: #1a1a1a;
+	border-radius: 0;
+}
